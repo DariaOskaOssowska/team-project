@@ -90,10 +90,10 @@ a:hover {
 }
 
 .header {
-  width: 100vw;
   color: #b9b9b9;
   padding-top: 30px;
   background-color: #ffffff;
+  width: 100vw;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.214;
@@ -226,8 +226,8 @@ a:hover {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  font-family: "Montserrat", sans-serif;
   color: #111518;
+  font-family: "Montserrat", sans-serif;
   text-transform: capitalize;
   font-weight: 700;
   font-size: 14px;
