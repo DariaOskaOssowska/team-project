@@ -1,0 +1,67 @@
+
+.reviews {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+        &__box {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+}
+.reviews__title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $dark-bgc;
+    margin-bottom: 20px;   
+}
+
+.reviews__image {
+     display: flex;
+     justify-content: center;
+}
+
+.reviews__svg {
+    height: 30px;
+    width: 30px;
+    margin: 26px 0;
+}
+
+.reviews__name {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.142;
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: $main-color;
+    margin-bottom: 10px;
+}
+
+.reviews-article {
+    font-size: 12px;
+    line-height: 1.166;
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: $darkGrey-colorFont;
+    
+
+        &__p {
+            color: $grey-colorFont;
+            margin-bottom: 25px;
+        }
+}
+
+.reviews-team-list {
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+.reviews-team-list__item {
+    margin-left: 10px;
+}
