@@ -6,10 +6,77 @@
   color: $dark-colorFont;
 }
 
+.about-name {
+  padding-top: 20px;
+  font-size: 19.3413px;
+  line-height: 1.189;
+  letter-spacing: 0.08em;
+  color: $dark-colorFont;
+
+  &::after {
+    content: ' ';
+    display: block;
+    margin-top: 9px;
+    border: 1px solid $grey-colorDecor;
+    // width: 270.78px;
+    // width: 100%;
+  }
+}
+
+.about-list {
+  &__item {
+    font-size: 13.5389px;
+    line-height: 1.182;
+    letter-spacing: 0.06em;
+    color: $dark-colorFont;
+
+    &::before {
+      content: '';
+      background-image: url('../images/svg/icons.svg#icon-check');
+      display: inline-block;
+      // min-width: 16px;
+      height: 14px;
+      outline: none;
+      // fill: tomato;
+    }
+  }
+  .about__description {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.667;
+    color: $grey-colorFont;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1279.9px) {
   .about-title {
     font-size: 26px;
     line-height: 1.304;
+  }
+
+  .about-name {
+    font-size: 20px;
+    line-height: 1.15;
+  }
+
+  .about-list {
+    &__item {
+      font-size: 12px;
+      line-height: 1.167;
+    }
+
+    .about-link {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.667;
+      text-decoration-line: underline;
+      color: $main-color;
+    }
+  }
+
+  .about__description {
+    font-size: 10px;
+    line-height: 2.8;
   }
 }
 
@@ -17,5 +84,27 @@
   .about-title {
     font-size: 46px;
     line-height: 1.308;
+  }
+
+  .about-name {
+    font-size: 30px;
+    line-height: 1.167;
+  }
+
+  .about-list {
+    &__item {
+      font-size: 16px;
+      line-height: 1.188;
+    }
+  }
+
+  .about__description {
+    font-size: 18px;
+    line-height: 1.556;
+  }
+
+  .about-link {
+    font-size: 18px;
+    line-height: 1.556;
   }
 }
