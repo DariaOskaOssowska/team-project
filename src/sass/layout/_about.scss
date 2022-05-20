@@ -1,0 +1,21 @@
+.about-title {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+  color: $dark-colorFont;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279.9px) {
+  .about-title {
+    font-size: 26px;
+    line-height: 1.304;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-title {
+    font-size: 46px;
+    line-height: 1.308;
+  }
+}
