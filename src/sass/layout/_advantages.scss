@@ -1,0 +1,27 @@
+.advantages {
+  padding-top: 0;
+}
+
+.advantages-container {
+  padding: 0 20px;
+  max-width: 1354px;
+}
+
+.advantages-list__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.643;
+  align-items: center;
+  letter-spacing: 0.08em;
+  color: $dark-colorFont;
+
+  &::before {
+    content: '';
+    background-image: url('../images/svg/icons.svg#icon-female.svg');
+  }
+}
+
+.advantages-list {
+  display: flex;
+  text-align: center;
+}
