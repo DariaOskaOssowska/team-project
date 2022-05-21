@@ -1,8 +1,10 @@
 .advantages {
   padding-top: 0;
+  padding-bottom: 0;
 }
 
 .advantages-container {
+  margin-top: 30px;
   padding: 0 20px;
   max-width: 1354px;
 }
@@ -14,14 +16,45 @@
   align-items: center;
   letter-spacing: 0.08em;
   color: $dark-colorFont;
-
-  &::before {
-    content: '';
-    background-image: url('../images/svg/icons.svg#icon-female.svg');
-  }
 }
 
-.advantages-list {
+.advantages-list__item {
   display: flex;
-  text-align: center;
+  align-items: center;
+  margin-left: 32px;
+  margin-right: 32px;
 }
+
+.advantages-list__item:not(:last-child) {
+  margin-bottom: 34px;
+}
+.advantages-list__item:nth-child(2),
+.advantages-list__item:nth-child(3) {
+  padding-right: 30px;
+}
+
+.advantages-list__item:nth-child(1):before {
+  content: url(/images/svg/icon-female-mobile.svg);
+  display: block;
+  margin-right: 10px;
+  width: 59px;
+  height: 60px;
+}
+
+.advantages-list__item:nth-child(2):before {
+  content: url(/images/svg/icon-mobile-mobile.svg);
+  display: block;
+  margin-right: 10px;
+  width: 59px;
+  height: 60px;
+}
+
+.advantages-list__item:nth-child(3):before {
+  content: url(/images/svg/icon-financial-mobile.svg);
+  display: block;
+  margin-right: 10px;
+  width: 59px;
+  height: 60px;
+}
+
+
