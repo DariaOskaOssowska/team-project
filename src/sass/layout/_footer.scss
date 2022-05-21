@@ -3,6 +3,10 @@
   color: #111518;
   margin-top: 55px;
 }
+.footer__logo-text-color 
+{
+  color:#FF6B09;
+}
 .footer__logo-text1 {
   font-family: 'Montserrat';
   font-style: normal;
@@ -91,6 +95,16 @@
   .footer__logo {
     margin-top: 55px;
   }
+ .footer__logo-text1 {
+   font-family: 'Montserrat ExtraBold';
+   font-style: normal;
+   font-weight: 800;
+   font-size: 26px;
+   line-height: 32px;
+  
+   letter-spacing: 0.04em;
+ }
+
   .footer__phone {
     margin-top: 21px;
   }
