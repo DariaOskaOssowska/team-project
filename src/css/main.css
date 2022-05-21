@@ -268,6 +268,7 @@ a {
   width: 280px;
   height: 73px;
   margin: 0 auto;
+  padding-top: 50px;
 }
 
 .contacts-text1 {
@@ -281,6 +282,8 @@ a {
 
 .contacts__box-text2 {
   width: 280px;
+  padding-top: 50px;
+  padding-bottom: 30px;
   margin: 0 auto;
 }
 
@@ -297,6 +300,45 @@ a {
 
 .contacts-text-color {
   color: #ff6b09;
+}
+
+.contacts-tabel-name {
+  width: 100%;
+  max-width: 280px;
+  height: 48px;
+  border: 1px solid #FFFFFF;
+  background-color: #2a2424;
+  margin-bottom: 20px;
+}
+
+.contacts-tabel-phone {
+  width: 100%;
+  max-width: 280px;
+  height: 48px;
+  border: 1px solid #FFFFFF;
+  background-color: #2a2424;
+  margin-bottom: 50px;
+}
+
+.contacts-button {
+  width: 260px;
+  height: 68px;
+  background-color: #ff6b09;
+}
+
+.contacts-button-text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  justify-content: center;
 }
 
 @media screen and (min-width: 480px) and (max-width: 767.9px) {
