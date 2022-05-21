@@ -257,11 +257,17 @@ a {
 }
 
 .contacts__section {
-  background-color: grey;
+  background-color: #2a2424;
   width: 320px;
   height: 507px;
   margin: 0 auto;
   text-align: center;
+}
+
+.contacts__box-text1 {
+  width: 280px;
+  height: 73px;
+  margin: 0 auto;
 }
 
 .contacts-text1 {
@@ -270,8 +276,12 @@ a {
   line-height: 18px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
-  padding-top: 50px;
+  color: #ffffff;
+}
+
+.contacts__box-text2 {
+  width: 280px;
+  margin: 0 auto;
 }
 
 .contacts-text2 {
@@ -282,11 +292,11 @@ a {
   line-height: 15px;
   text-align: center;
   letter-spacing: 0.08em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .contacts-text-color {
-  color: #FF6B09;
+  color: #ff6b09;
 }
 
 @media screen and (min-width: 480px) and (max-width: 767.9px) {

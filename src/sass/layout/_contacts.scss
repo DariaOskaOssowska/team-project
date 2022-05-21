@@ -1,52 +1,54 @@
 .contacts__section {
-    background-color: grey;
-width: 320px;
-height: 507px;
-margin: 0 auto;
-text-align: center;
-
+  background-color: rgb(42, 36, 36);
+  width: 320px;
+  height: 507px;
+  margin: 0 auto;
+  text-align: center;
 }
-
+.contacts__box-text1 {
+  width: 280px;
+  height: 73px;
+  margin: 0 auto;
+}
 .contacts-text1 {
+  font-family: 'Montserrat ExtraBold';
+  font-size: 14px;
+  line-height: 18px;
 
-    font-family: 'Montserrat ExtraBold';
-        font-size: 14px;
-        line-height: 18px;
-        
-        text-align: center;
-        letter-spacing: 0.03em;
-    
-        color: #FFFFFF;
+  text-align: center;
+  letter-spacing: 0.03em;
 
-        padding-top: 50px;
+  color: #ffffff;
 }
 
-.contacts-text2 {
-font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 15px;
-    text-align: center;
-    letter-spacing: 0.08em;
+.contacts__box-text2 {
+  width: 280px;
 
-    color: #FFFFFF;
+ margin: 0 auto;
+}
+.contacts-text2 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 0.08em;
+
+  color: #ffffff;
 }
 .contacts-text-color {
-    color: #FF6B09;
+  color: #ff6b09;
 }
 
-
-  @media screen and (min-width: 480px) and (max-width: 767.9px) {
-    .contacts-text1 {
-        padding-top:50px;
-    }
+@media screen and (min-width: 480px) and (max-width: 767.9px) {
+  .contacts-text1 {
+    padding-top: 50px;
   }
+}
 
-  @media screen and (min-width: 768px) and (max-width: 1279.9px) {
-     
-  }
+@media screen and (min-width: 768px) and (max-width: 1279.9px) {
+}
 
-  @media screen and (min-width: 1280px) {
-
-  }
+@media screen and (min-width: 1280px) {
+}
