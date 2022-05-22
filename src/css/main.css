@@ -258,30 +258,34 @@ a {
 
 .contacts__section {
   background-color: #2a2424;
-  width: 320px;
-  height: 507px;
+  width: 100%;
+  max-width: 320px;
   margin: 0 auto;
   text-align: center;
 }
 
 .contacts__box-text1 {
-  width: 280px;
+  width: 100%;
+  max-width: 280px;
   height: 73px;
   margin: 0 auto;
   padding-top: 50px;
+  margin-bottom: 50px;
 }
 
 .contacts-text1 {
-  font-family: 'Montserrat ExtraBold';
+  font-family: 'Montserrat';
   font-size: 14px;
   line-height: 18px;
+  font-weight: 800;
+  font-style: normal;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #ffffff;
 }
 
 .contacts__box-text2 {
-  width: 280px;
+  width: 100%;
+  max-width: 280px;
   padding-top: 50px;
   padding-bottom: 30px;
   margin: 0 auto;
@@ -306,7 +310,7 @@ a {
   width: 100%;
   max-width: 280px;
   height: 48px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   background-color: #2a2424;
   margin-bottom: 20px;
 }
@@ -315,14 +319,15 @@ a {
   width: 100%;
   max-width: 280px;
   height: 48px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   background-color: #2a2424;
   margin-bottom: 50px;
 }
 
 .contacts-button {
-  width: 260px;
-  height: 68px;
+  max-width: 260px;
+  width: 100%;
+  height: 48px;
   background-color: #ff6b09;
 }
 
@@ -337,13 +342,172 @@ a {
   text-align: center;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   justify-content: center;
 }
 
+.contact-tabel-size {
+  width: 100%;
+  max-width: 290px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
 @media screen and (min-width: 480px) and (max-width: 767.9px) {
+  .contacts__section {
+    width: 100%;
+    max-width: 767.9px;
+  }
   .contacts-text1 {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 800;
+    font-style: normal;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+  .contacts__box-text1 {
+    width: 100%;
+    max-width: 280px;
+    height: 73px;
+    margin: 0 auto;
     padding-top: 50px;
+    margin-bottom: 50px;
+  }
+  .contacts-text2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: #ffffff;
+  }
+  .contacts__box-text2 {
+    width: 100%;
+    max-width: 280px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+  }
+  .contact-tabel-size {
+    width: 100%;
+    max-width: 290px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279.9px) {
+  .contacts__section {
+    width: 100%;
+    max-width: 1279.9px;
+  }
+  .contacts-text1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 34px;
+  }
+  .contacts__box-text1 {
+    width: 100%;
+    max-width: 569px;
+    height: 100px;
+    padding-top: 50px;
+    margin-bottom: 50px;
+  }
+  .contacts-text2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.08em;
+  }
+  .contacts__box-text2 {
+    width: 100%;
+    max-width: 452px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+  }
+  .contact-tabel-size {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding-bottom: 70px;
+  }
+  .contacts-tabel-name,
+  .contacts-tabel-phone {
+    width: 100%;
+    max-width: 390px;
+  }
+  .contacts-button {
+    max-width: 260px;
+    width: 100%;
+    height: 48px;
+    background-color: #ff6b09;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contacts__section {
+    width: 100%;
+    max-width: 1680px;
+  }
+  .contacts__box-text1 {
+    width: 100%;
+    max-width: 1132px;
+    height: 178px;
+    padding-top: 100px;
+    margin-bottom: 150px;
+  }
+  .contacts-text1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 60px;
+  }
+  .contacts__box-text2 {
+    width: 100%;
+    max-width: 1132px;
+    padding-top: 50px;
+    padding-bottom: 55px;
+    margin: 0 auto;
+  }
+  .contacts-text2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    letter-spacing: 0.08em;
+  }
+  .contact-tabel-size {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+  }
+  .contacts-tabel-name,
+  .contacts-tabel-phone {
+    width: 100%;
+    max-width: 490px;
+  }
+  .contacts-button {
+    max-width: 368px;
+    width: 100%;
+    height: 70px;
+    background-color: #ff6b09;
+  }
+  .contacts-button-text {
+    font-size: 14px;
   }
 }
 
@@ -354,7 +518,7 @@ a {
 }
 
 .footer__logo-text-color {
-  color: #FF6B09;
+  color: #ff6b09;
 }
 
 .footer__logo-text1 {
@@ -481,7 +645,6 @@ a {
     font-weight: 800;
     font-size: 26px;
     line-height: 32px;
-    /* identical to box height */
     letter-spacing: 0.04em;
   }
   .footer__logo-text2 {
@@ -490,7 +653,6 @@ a {
     font-weight: 700;
     font-size: 8px;
     line-height: 10px;
-    /* identical to box height */
     letter-spacing: 0.18em;
     text-transform: uppercase;
   }
@@ -499,7 +661,6 @@ a {
     font-family: 'Montserrat SemiBold';
     font-size: 20px;
     line-height: 23px;
-    /* identical to box height */
     letter-spacing: 0.08em;
     color: #111518;
   }
@@ -540,7 +701,6 @@ a {
     font-weight: 800;
     font-size: 26px;
     line-height: 32px;
-    /* identical to box height */
     letter-spacing: 0.04em;
   }
   .footer__logo-text2 {
@@ -549,7 +709,6 @@ a {
     font-weight: 700;
     font-size: 8px;
     line-height: 10px;
-    /* identical to box height */
     letter-spacing: 0.18em;
     text-transform: uppercase;
   }
@@ -558,7 +717,6 @@ a {
     font-family: 'Montserrat SemiBold';
     font-size: 20px;
     line-height: 23px;
-    /* identical to box height */
     letter-spacing: 0.08em;
     color: #111518;
   }
