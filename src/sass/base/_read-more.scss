@@ -1,0 +1,35 @@
+#check, .content {
+    display: none;
+}
+
+.content {
+    font-size: 12px;
+    line-height: 1.166;
+    letter-spacing: 0.08em;
+    color: $darkGrey-colorFont;
+    transition: 0.5s linear;
+}
+
+.label {
+    display: inline;
+    font-size: 12px;
+    line-height: 1.166;
+    letter-spacing: 0.08em;
+    color: $main-color;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#check:checked ~ .content {
+    display: block;
+}
+
+#check:checked ~ .label {
+    visibility: hidden;
+}
+
+#check:checked ~ .label:after {
+    content: 'Show Less';
+    display: block;
+    visibility: visible;
+}
