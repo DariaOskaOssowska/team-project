@@ -7,9 +7,9 @@
   color: #ff6b09;
 }
 .footer__logo-text1 {
-  font-family: 'Montserrat';
+font-family: 'Montserrat ExtraBold';
   font-style: normal;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 16px;
   line-height: 6px;
 
@@ -56,6 +56,11 @@
   width: 20px;
   height: 20px;
   margin-right: 10px;
+}
+.footer__svg-fire {
+  width: 22px;
+  height: 30px;
+  margin-bottom: -4px;
 }
 .footer__phone {
   font-family: 'Montserrat SemiBold';
