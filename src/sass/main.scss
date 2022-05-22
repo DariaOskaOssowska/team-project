@@ -1,16 +1,15 @@
-/*
- * Główny plik dla stylów.
- * Wszystkie partials podłączamy tutaj.
- */
-
 @import './utils/variables';
 @import './base/common';
 @import './base/container';
 @import './base/section';
 
 @import './layout/how-we-do';
+<<<<<<< Updated upstream
 @import './layout/contacts';
 @import './layout/footer';
 
 // Style dla pliku z przykładem HTML fragmentu
 // @import './example';
+=======
+@import './layout/about';
+>>>>>>> Stashed changes
