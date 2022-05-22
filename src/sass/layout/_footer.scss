@@ -1,3 +1,8 @@
+.footer__section {
+  width: 100%;
+  max-width: 1680px;
+}
+
 .footer__logo {
   text-align: center;
   color: #111518;
@@ -7,7 +12,7 @@
   color: #ff6b09;
 }
 .footer__logo-text1 {
-font-family: 'Montserrat ExtraBold';
+  font-family: 'Montserrat ExtraBold';
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
