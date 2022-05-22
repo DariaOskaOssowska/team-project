@@ -264,6 +264,33 @@ a {
   text-align: center;
 }
 
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767.9px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767.9px), screen and (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 767.9px), screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 767.9px) {
+  .contacts__section {
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), #2f303a66), url(../images/mobile/contacts-bg-mobile@2x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199.9px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199.9px), screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199.9px), screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1199.9px) {
+  .contacts__section {
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), #2f303a66), url(../images/tablet/contacts-bg-tablet@2x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px) and (max-width: 1680px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px) and (max-width: 1680px), screen and (min-resolution: 192dpi) and (min-width: 1200px) and (max-width: 1680px), screen and (min-resolution: 2dppx) and (min-width: 1200px) and (max-width: 1680px) {
+  .contacts__section {
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), #2f303a66), url(../images/desktop/contacts-bg@2x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
 .contacts__box-text1 {
   width: 100%;
   max-width: 280px;
@@ -357,6 +384,9 @@ a {
   .contacts__section {
     width: 100%;
     max-width: 767.9px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), #2f303a66), url(../images/mobile/contacts-bg-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   .contacts-text1 {
     font-family: 'Montserrat';
@@ -404,6 +434,9 @@ a {
   .contacts__section {
     width: 100%;
     max-width: 1279.9px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), #2f303a66), url(../images/tablet/contacts-bg-tablet.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   .contacts-text1 {
     font-family: 'Montserrat';
@@ -458,6 +491,9 @@ a {
   .contacts__section {
     width: 100%;
     max-width: 1680px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), #2f303a66), url(../images/desktop/contacts-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   .contacts__box-text1 {
     width: 100%;
