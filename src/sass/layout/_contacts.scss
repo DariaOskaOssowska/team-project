@@ -9,59 +9,50 @@
 
 // ==================================================================
 
-
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767.9px),
-screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767.9px),
-screen and (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 767.9px),
-screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 767.9px) {
+  screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767.9px),
+  screen and (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 767.9px),
+  screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 767.9px) {
   .contacts__section {
-
     margin: 0 auto;
     background-image: linear-gradient(rgba(0, 0, 0, 70%), rgb(0 0 0 / 70%)),
       url(../images/mobile/contacts-bg-mobile@2x.jpg);
-     
+
     background-size: cover;
     background-repeat: no-repeat;
-
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199.9px),
-screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199.9px),
-screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199.9px),
-screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1199.9px) {
-.contacts__section {
-
+  screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199.9px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199.9px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1199.9px) {
+  .contacts__section {
     margin: 0 auto;
-    background-image:linear-gradient(rgba(0, 0, 0, 70%), rgb(0 0 0 / 70%)),
+    background-image: linear-gradient(rgba(0, 0, 0, 70%), rgb(0 0 0 / 70%)),
       url(../images/tablet/contacts-bg-tablet@2x.jpg);
 
     background-size: cover;
     background-repeat: no-repeat;
-
   }
-
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px) and (max-width: 1680px),
-screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px) and (max-width: 1680px),
-screen and (min-resolution: 192dpi) and (min-width: 1200px) and (max-width: 1680px),
-screen and (min-resolution: 2dppx) and (min-width: 1200px) and (max-width: 1680px) {
-.contacts__section {
-
+  screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px) and (max-width: 1680px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px) and (max-width: 1680px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) and (max-width: 1680px) {
+  .contacts__section {
     margin: 0 auto;
     background-image: linear-gradient(rgba(0, 0, 0, 70%), rgb(0 0 0 / 70%)),
       url(../images/desktop/contacts-bg@2x.jpg);
 
     background-size: cover;
     background-repeat: no-repeat;
-
   }
-
 }
 
-
-
 // ================================================================================
+
+
 
 .contacts__box-text1 {
   width: 100%;
@@ -73,11 +64,10 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) and (max-width: 1680p
 }
 
 .contacts-text1 {
-  font-family: 'Montserrat';
   font-size: 14px;
   line-height: 18px;
   font-weight: 800;
-  font-style: normal;
+
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -90,8 +80,6 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) and (max-width: 1680p
   margin: 0 auto;
 }
 .contacts-text2 {
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 600;
   font-size: 12px;
   line-height: 15px;
@@ -127,8 +115,6 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) and (max-width: 1680p
   background-color: #ff6b09;
 }
 .contacts-button-text {
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 700;
   font-size: 12px;
   line-height: 15px;
@@ -154,17 +140,16 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) and (max-width: 1680p
     max-width: 767.9px;
 
     background-image: linear-gradient(rgba(0, 0, 0, 70%), rgb(0 0 0 / 70%)),
-        url(../images/mobile/contacts-bg-mobile.jpg);
-    
-      background-size: cover;
-      background-repeat: no-repeat;
+      url(../images/mobile/contacts-bg-mobile.jpg);
+
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   .contacts-text1 {
-    font-family: 'Montserrat';
     font-size: 14px;
     line-height: 18px;
     font-weight: 800;
-    font-style: normal;
+
     text-align: center;
     letter-spacing: 0.03em;
   }
@@ -178,8 +163,6 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) and (max-width: 1680p
   }
 
   .contacts-text2 {
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 600;
     font-size: 12px;
     line-height: 15px;
@@ -209,15 +192,13 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) and (max-width: 1680p
     width: 100%;
     max-width: 1279.9px;
 
-    background-image:linear-gradient(rgba(0, 0, 0, 70%), rgb(0 0 0 / 70%)),
-        url(../images/tablet/contacts-bg-tablet.jpg);
-    
-      background-size: cover;
-      background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 70%), rgb(0 0 0 / 70%)),
+      url(../images/tablet/contacts-bg-tablet.jpg);
+
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   .contacts-text1 {
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 800;
     font-size: 26px;
     line-height: 34px;
@@ -231,8 +212,6 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) and (max-width: 1680p
   }
 
   .contacts-text2 {
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
@@ -274,10 +253,10 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) and (max-width: 1680p
     max-width: 1680px;
 
     background-image: linear-gradient(rgba(0, 0, 0, 70%), rgb(0 0 0 / 70%)),
-        url(../images/desktop/contacts-bg.jpg);
-    
-      background-size: cover;
-      background-repeat: no-repeat;
+      url(../images/desktop/contacts-bg.jpg);
+
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   .contacts__box-text1 {
     width: 100%;
@@ -287,8 +266,6 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) and (max-width: 1680p
     margin-bottom: 150px;
   }
   .contacts-text1 {
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 800;
     font-size: 46px;
     line-height: 60px;
@@ -303,8 +280,6 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) and (max-width: 1680p
     margin: 0 auto;
   }
   .contacts-text2 {
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 600;
     font-size: 30px;
     line-height: 37px;
@@ -328,7 +303,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) and (max-width: 1680p
     height: 70px;
     background-color: #ff6b09;
   }
-    .contacts-button-text {
-      font-size: 14px;
-    }
+  .contacts-button-text {
+    font-size: 14px;
+  }
 }
