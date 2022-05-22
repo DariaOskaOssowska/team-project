@@ -1,0 +1,316 @@
+.contacts__section {
+  background-color: rgb(42, 36, 36);
+  width: 100%;
+  max-width: 479px;
+
+  margin: 0 auto;
+  text-align: center;
+}
+
+// ==================================================================
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767.9px),
+  screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767.9px),
+  screen and (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 767.9px),
+  screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 767.9px) {
+  .contacts__section {
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 70%), rgb(0 0 0 / 70%)),
+      url(../images/mobile/contacts-bg-mobile@2x.jpg);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199.9px),
+  screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199.9px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199.9px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1199.9px) {
+  .contacts__section {
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 70%), rgb(0 0 0 / 70%)),
+      url(../images/tablet/contacts-bg-tablet@2x.jpg);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px) and (max-width: 1680px),
+  screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px) and (max-width: 1680px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px) and (max-width: 1680px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) and (max-width: 1680px) {
+  .contacts__section {
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 70%), rgb(0 0 0 / 70%)),
+      url(../images/desktop/contacts-bg@2x.jpg);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+// ================================================================================
+.contacts {
+  &__box-text1 {
+    width: 100%;
+    max-width: 280px;
+    height: 73px;
+    margin: 0 auto;
+    padding-top: 50px;
+    margin-bottom: 50px;
+  }
+  &__box-text2 {
+    width: 100%;
+    max-width: 280px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+  }
+  &-text1 {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 800;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+  &-text2 {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 0.08em;
+
+    color: #ffffff;
+  }
+  &-text-color {
+    color: #ff6b09;
+  }
+  &-tabel {
+    &-size {
+      width: 100%;
+      max-width: 290px;
+      margin: 0 auto;
+      padding-bottom: 50px;
+    }
+    &-name {
+      width: 100%;
+      max-width: 280px;
+      height: 48px;
+      border: 1px solid #ffffff;
+      background-color: transparent;
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
+    &-phone {
+      width: 100%;
+      max-width: 280px;
+      height: 48px;
+      border: 1px solid #ffffff;
+      background-color: transparent;
+      margin-bottom: 50px;
+      color: #ffffff;
+    }
+  }
+  &-button {
+    max-width: 260px;
+    width: 100%;
+    height: 48px;
+    background-color: #ff6b09;
+    &-text {
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 15px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+
+      color: #ffffff;
+      justify-content: center;
+    }
+  }
+}
+.form-input:not(:placeholder-shown):required:valid {
+  border-color: green;
+}
+
+.form-input:not(:placeholder-shown):required:invalid {
+  border-color: red;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767.9px) {
+  .contacts__section {
+    width: 100%;
+    max-width: 767.9px;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 70%), rgb(0 0 0 / 70%)),
+      url(../images/mobile/contacts-bg-mobile.jpg);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .contacts-text1 {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 800;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+  .contacts__box-text1 {
+    width: 100%;
+    max-width: 280px;
+    height: 73px;
+    margin: 0 auto;
+    padding-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .contacts-text2 {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 0.08em;
+
+    color: #ffffff;
+  }
+  .contacts__box-text2 {
+    width: 100%;
+    max-width: 280px;
+
+    padding-top: 50px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+  }
+  .contacts-tabel-size {
+    width: 100%;
+    max-width: 290px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279.9px) {
+  .contacts__section {
+    width: 100%;
+    max-width: 1279.9px;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 70%), rgb(0 0 0 / 70%)),
+      url(../images/tablet/contacts-bg-tablet.jpg);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .contacts-text1 {
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 34px;
+  }
+  .contacts__box-text1 {
+    width: 100%;
+    max-width: 569px;
+    height: 100px;
+    padding-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .contacts-text2 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.08em;
+  }
+
+  .contacts__box-text2 {
+    width: 100%;
+    max-width: 452px;
+
+    padding-top: 50px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+  }
+
+  .contacts-tabel-size {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding-bottom: 70px;
+  }
+  .contacts-tabel-name,
+  .contacts-tabel-phone {
+    width: 100%;
+    max-width: 390px;
+  }
+  .contacts-button {
+    max-width: 260px;
+    width: 100%;
+    height: 48px;
+    background-color: #ff6b09;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contacts__section {
+    width: 100%;
+    max-width: 1680px;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 70%), rgb(0 0 0 / 70%)),
+      url(../images/desktop/contacts-bg.jpg);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .contacts__box-text1 {
+    width: 100%;
+    max-width: 1132px;
+    height: 178px;
+    padding-top: 100px;
+    margin-bottom: 150px;
+  }
+  .contacts-text1 {
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 60px;
+  }
+
+  .contacts__box-text2 {
+    width: 100%;
+    max-width: 1132px;
+
+    padding-top: 50px;
+    padding-bottom: 55px;
+    margin: 0 auto;
+  }
+  .contacts-text2 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    letter-spacing: 0.08em;
+  }
+  .contacts-tabel-size {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+  }
+  .contacts-tabel-name,
+  .contacts-tabel-phone {
+    width: 100%;
+    max-width: 490px;
+  }
+  .contacts-button {
+    max-width: 368px;
+    width: 100%;
+    height: 70px;
+    background-color: #ff6b09;
+  }
+  .contacts-button-text {
+    font-size: 14px;
+  }
+}
