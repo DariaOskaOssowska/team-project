@@ -1,30 +1,63 @@
 <section class="reviews section">
-<div class="container">
+<div class="reviews__container">
     <h1 class="reviews__title">
-        Feedback from <br>graduates
+        Feedback from graduates
     </h1>
-        <picture class="reviews__image">
-            <source srcset="../src/images/mobile/team/team-main.png 1x, ../src/images/mobile/team/team-main@2x.png  2x" media="(min-width: 320px) and (max-width: 767px)" />
-            <source srcset="../src/images/tablet/team/team-main.png 1x, ../src/images/tablet/team/team-main@2x.png 2x" media="(min-width: 768px) and (max-width: 1199px)" />
-            <source srcset="../src/images/desktop/team/team-main.png 1x, ../src/images/desktop/team/team-main@2x.png 2x" media="(min-width: 1200px)" />
-            <img src="../src/images/mobile/team/team-main.png" alt="dziewczyna2" />
-        </picture>
-        <a href="https://vk.com/">
-            <svg class="reviews__svg">
-                <use href="../src/images/sprite.svg#icon-vk"></use>
-            </svg>
-        </a>
-        <h1 class="reviews__name">Tonya Kucherovskaya</h1>
-        <div>
-            <input type="checkbox" id="check">
-            <article class="reviews-article">
-                <p class="reviews-article__p">Graduated from 2015, National University of Bioresources and natural history of Ukraine</p>
-                    In a short time with Elena, I mastered grammar and replenished my completely empty vocabulary. From the first lesson I realized that I was on my plate. Elena and I became friends because she was really worried about my success. She became an authority for me, but I did not tremble in class, fearing to make the slightest mistake. Now I can brag that I'm student <span class="span">...</span>
-                <span class="content">lorem ipsum loresm stragonow despacito lorem</span>
-                <label for="check" class="label">Read More</label>
-            </article>
+    <div class="wrapper">
+        <svg class="wrapper__svg" width="25">
+            <use href="./images/sprite.svg#icon-Arrow-1"></use>
+        </svg>
+        <div class="left-side">
+            <picture class="reviews__img">
+                <source srcset="../src/images/mobile/team/team-main.png 1x, ../src/images/mobile/team/team-main@2x.png  2x" media="(max-width: 767px)" />
+                <source srcset="../src/images/tablet/team/team-main.png 1x, ../src/images/tablet/team/team-main@2x.png 2x" media="(min-width: 768px)" />
+                <img src="../src/images/tablet/team/team-main.png" alt="dziewczyna2" width="90" />
+                <a href="https://vk.com/">
+                    <svg class="reviews__svg">
+                        <use href="../src/images/sprite.svg#icon-vk"></use>
+                    </svg>
+                </a>
+            </picture>
         </div>
-        <div class="bb">
+
+        <div class="right-side">
+                <h1 class="reviews__name">Tonya Kucherovskaya</h1>       
+                <article class="reviews-article">
+                    <p class="reviews-article__p">Graduated from 2015, National University of Bioresources and natural history of Ukraine</p>
+                        <p class="reviews-article__text">In a short time with Elena, I mastered grammar and replenished my completely empty vocabulary. From the first lesson
+                        I realized that I was on my plate. Elena and I became friends because she was really worried about my success. 
+                        She became an authority for me, but I did not tremble in class, fearing to make the slightest mistake. 
+                        Now I can brag that I'm student <span id="dots">...</span><span id="more">lorem ipsum loresm stragonow despacito lorem</span>
+                        <button onclick="myFunction()" id="myBtn">Read more</button></p>
+                    </article>
+                
+                <script>
+                    function myFunction() {
+                    var dots = document.getElementById("dots");
+                    var moreText = document.getElementById("more");
+                    var btnText = document.getElementById("myBtn");
+
+                        if (dots.style.display === "none") {
+                            dots.style.display = "inline";
+                            btnText.innerHTML = "Read more"; 
+                            moreText.style.display = "none";
+                        } else {
+                            dots.style.display = "none";
+                            btnText.innerHTML = "Read less"; 
+                            moreText.style.display = "inline";
+                        }
+                    }
+                </script>
+        </div>
+        <svg class="wrapper__svg" width="25">
+            <use href="./images/sprite.svg#icon-Arrow-2"></use>
+        </svg>
+    </div>
+        <div class="reviews-team-list__div">   
+        <svg class="reviews-team-list__svg" width="25">
+            <use href="./images/sprite.svg#icon-Arrow-1"></use>
+        </svg>
+
         <ul class="reviews-team-list">
             <li class="reviews-team-list__item">
                 <picture class="reviews__image">
@@ -83,6 +116,9 @@
                 </picture>
             </li>
         </ul>
-    </div>
-</div>                
+        <svg class="reviews-team-list__svgR" width="25">
+            <use href="./images/sprite.svg#icon-Arrow-2"></use>
+        </svg>
+    </div> 
+</div>              
 </section>
