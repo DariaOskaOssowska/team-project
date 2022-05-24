@@ -1,7 +1,10 @@
 @import './utils/variables';
+@import './utils/visually-hidden';
+
 @import './base/common';
 @import './base/container';
 @import './base/section';
 
+@import './layout/advantages';
 @import './layout/how-we-do';
 @import './layout/about';
