@@ -1,8 +1,6 @@
-
 .footer__section {
   width: 100%;
   max-width: 1680px;
-  padding: 0px;
 }
 
 .footer__logo {
@@ -103,7 +101,6 @@
   padding-bottom: 21px;
 }
 @media screen and (min-width: 480px) and (max-width: 767.9px) {
-  
   .footer__logo {
     margin-top: 55px;
   }
@@ -120,7 +117,6 @@
   .footer__phone {
     margin-top: 21px;
   }
-  
   .footer__instagram {
     margin-top: 31px;
     margin-bottom: 50px;
@@ -146,23 +142,12 @@
   padding-left: 52px;
 }
 @media screen and (min-width: 768px) and (max-width: 1279.9px) {
-  .board {
-    margin-left: 24px;
-    margin-right: 24px;
-      width: 0px;
-      height: 40px;
-      border: 1px solid #B9B9B9 ;
-    }
-    .footer__section {
-      padding: 0px;
-    }
   .footer__position {
     display: inline-flex;
-    
+    align-items: baseline;
   }
   .footer__logo {
     margin: 0px 203px 40px 40px;
-    padding-top: 30px;
   }
   .footer__logo-text1 {
     
@@ -184,8 +169,8 @@
   }
 
   .footer__phone {
+    margin-right: 50px;
     
-    padding-top: 15px;
     font-size: 20px;
     line-height: 23px;
 
@@ -197,7 +182,6 @@
   .footer__instagram {
     margin-top: 0px;
     margin-bottom: 0px;
-    padding-top: 30px;
   }
 
   .box__all-rights {
@@ -220,26 +204,14 @@
   }
 }
 @media screen and (min-width: 1280px) {
-
-  .board {
-      margin-left: 24px;
-      margin-right: 24px;
-      width:0px;
-      height: 40px;
-      border: 1px solid #B9B9B9;
-    }
-.footer__section {
-  padding: 0px;
-}
   .footer__position {
     display: inline-flex;
-    
+    align-items: baseline;
     margin-left: 183px;
   }
 
   .footer__logo {
     margin: 0px 290px 40px 0px;
-    padding-top: 30px;
   }
 
   .footer__logo-text1 {
@@ -262,8 +234,8 @@
   }
 
   .footer__phone {
+    margin-right: 40px;
     
-    padding-top: 15px;
     font-size: 20px;
     line-height: 23px;
 
@@ -275,7 +247,6 @@
   .footer__instagram {
     margin-top: 0px;
     margin-bottom: 0px;
-    padding-top: 30px;
   }
 
   .box__all-rights {
