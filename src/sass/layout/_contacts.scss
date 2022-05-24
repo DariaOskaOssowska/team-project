@@ -6,6 +6,16 @@
   margin: 0 auto;
   text-align: center;
 }
+.contacts__section {
+  width: 100%;
+  max-width: 319, 9px;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 20%), rgb(0 0 0 / 20%)),
+    url(../images/mobile/contacts-bg-mobile.png);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 // ==================================================================
 
@@ -15,8 +25,8 @@
   screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 767.9px) {
   .contacts__section {
     margin: 0 auto;
-    background-image: linear-gradient(rgba(0, 0, 0, 70%), rgb(0 0 0 / 70%)),
-      url(../images/mobile/contacts-bg-mobile@2x.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 20%), rgb(0 0 0 / 20%)),
+      url(../images/mobile/contacts-bg-mobile@2x.png);
 
     background-size: cover;
     background-repeat: no-repeat;
@@ -28,8 +38,8 @@
   screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1199.9px) {
   .contacts__section {
     margin: 0 auto;
-    background-image: linear-gradient(rgba(0, 0, 0, 70%), rgb(0 0 0 / 70%)),
-      url(../images/tablet/contacts-bg-tablet@2x.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 20%), rgb(0 0 0 / 20%)),
+      url(../images/tablet/contacts-bg-tablet@2.png);
 
     background-size: cover;
     background-repeat: no-repeat;
@@ -42,8 +52,8 @@
   screen and (min-resolution: 2dppx) and (min-width: 1200px) and (max-width: 1680px) {
   .contacts__section {
     margin: 0 auto;
-    background-image: linear-gradient(rgba(0, 0, 0, 70%), rgb(0 0 0 / 70%)),
-      url(../images/desktop/contacts-bg@2x.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 20%), rgb(0 0 0 / 20%)),
+      url(../images/desktop/contacts-bg-desktop@2x.png);
 
     background-size: cover;
     background-repeat: no-repeat;
@@ -146,8 +156,8 @@
     width: 100%;
     max-width: 767.9px;
 
-    background-image: linear-gradient(rgba(0, 0, 0, 70%), rgb(0 0 0 / 70%)),
-      url(../images/mobile/contacts-bg-mobile.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 20%), rgb(0 0 0 / 20%)),
+      url(../images/mobile/contacts-bg-mobile.png);
 
     background-size: cover;
     background-repeat: no-repeat;
@@ -199,8 +209,8 @@
     width: 100%;
     max-width: 1279.9px;
 
-    background-image: linear-gradient(rgba(0, 0, 0, 70%), rgb(0 0 0 / 70%)),
-      url(../images/tablet/contacts-bg-tablet.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 20%), rgb(0 0 0 / 20%)),
+      url(../images/tablet/contacts-bg-tablet.png);
 
     background-size: cover;
     background-repeat: no-repeat;
@@ -259,9 +269,8 @@
     width: 100%;
     max-width: 1680px;
 
-    background-image: linear-gradient(rgba(0, 0, 0, 70%), rgb(0 0 0 / 70%)),
-      url(../images/desktop/contacts-bg.jpg);
-
+    background-image: linear-gradient(rgba(0, 0, 0, 20%), rgb(0, 0, 0, 20%)),
+      url(../images/desktop/contacts-bg-desktop.png);
     background-size: cover;
     background-repeat: no-repeat;
   }
