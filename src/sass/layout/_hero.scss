@@ -2,7 +2,6 @@
   display: flex;
   padding-top: 50px;
   padding-bottom: 60px;
-
   background-image: url('../images/mobile/hero/hero-bgc-mobile.png');
   background-position: 0;
   background-repeat: no-repeat;
@@ -64,7 +63,7 @@
   }
 
   &--dark {
-        margin-bottom: 40px;
+    margin-bottom: 40px;
     margin-right: 75px;
     font-weight: 700;
     color: $darkGrey-colorFont;
@@ -75,7 +74,7 @@
   }
 }
 img {
-    display: inline;
+  display: inline;
 }
 
 .hero-btn {
