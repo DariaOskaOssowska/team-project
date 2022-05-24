@@ -1,0 +1,136 @@
+.benefits {
+  &__section {
+    display: block;
+    width: 100%;
+    max-width: 280px;
+
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+    margin-bottom: 130px;
+    color: black;
+    z-index: 2;
+  }
+
+  &__box {
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+
+  &__boxs-position {
+    padding-top: 29px;
+    padding-left: 30px;
+  }
+
+  &__title {
+    color: $main-color;
+
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 23px;
+  }
+
+  &__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+
+    letter-spacing: 0.08em;
+
+    color: $dark-colorFont;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767.9px) {
+  .benefits {
+    &__section {
+      width: 100%;
+      max-width: 480px;
+    }
+    &__box {
+      display: block;
+    }
+    &__title {
+      width: 100%;
+      max-width: 260px;
+    }
+    &__text {
+      width: 100%;
+      max-width: 260px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279.9px) {
+  .benefits {
+    &__section {
+      width: 100%;
+      max-width: 688px;
+    }
+
+    &__box {
+      display: inline-flex;
+      flex-wrap: wrap;
+    }
+
+    &__title {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 23px;
+      width: 236px;
+    }
+
+    &__text {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 28px;
+      width: 236px;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .benefits {
+    &__section {
+      display: block;
+      width: 100%;
+      max-width: 1314px;
+      height: 398px;
+      box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.3);
+      margin: 0 auto;
+      margin-bottom: 130px;
+      color: black;
+      z-index: 2;
+    }
+
+    &__box {
+      display: inline-flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    &__boxs-position {
+      margin-left: 40px;
+      width: 356px;
+    }
+
+    &__title {
+      color: $main-color;
+      width: 356px;
+      padding-bottom: 10px;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 32px;
+    }
+
+    &__text {
+      width: 356px;
+
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 28px;
+
+      letter-spacing: 0.08em;
+    }
+  }
+}
