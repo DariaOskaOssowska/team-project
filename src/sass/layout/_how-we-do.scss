@@ -168,8 +168,9 @@
 
     &__item {
       display: flex;
+      flex-basis: calc((100% - 15px * 3) / 3);
       flex-wrap: wrap;
-      width: 32.35%;
+      // width: 32.35%;
       margin: 0;
       margin-bottom: 20px;
     }
