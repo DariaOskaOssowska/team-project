@@ -1,0 +1,49 @@
+.problems {
+    height: 700px;
+    background-image: linear-gradient(to bottom, $dark-bgc 78%, 
+    $white-colorFont 22%);
+
+    &__container {
+        margin: 0 20px;
+
+    }
+
+    &__header {
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 1.291;
+        letter-spacing: 0.03em;
+        color: $white-colorFont;
+        margin-bottom: 30px;
+    }
+
+    &__span {
+        color: $main-color;
+    }    
+
+    &__wrapper {
+        height: 465px;
+        width: 260px;
+        background-color: $white-colorFont;
+        box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+    }
+}
+
+.problems-list {
+    display: flex;
+    flex-direction: column;
+    counter-reset: licznik;
+
+    &__item {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.428;
+        letter-spacing: 0.08em;
+        color: $dark-bgc;
+
+        &::before {
+            counter-increment: licznik;
+            content: counter(licznik, decimal-leading-zero); 
+        }
+    }
+}
