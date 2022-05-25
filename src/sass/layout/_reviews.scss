@@ -1,0 +1,230 @@
+
+.reviews {
+
+    display:flex;
+
+    &__container {
+        margin: 0 20px;
+        align-items: center;
+        max-width: 1354px;
+    }
+    &__title {
+        font-weight: 900px;
+        font-size: 20px;
+        line-height: 130%;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $dark-bgc;
+    }
+
+    &__img {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__svg {
+        height: 30px;
+        width: 30px;
+        margin-top: 20px;
+        margin-bottom: 26px;    
+    }
+
+    &__name {
+        font-weight: 900px;
+        font-size: 14px;
+        line-height: 1.142;
+        letter-spacing: 0.08em;
+        color: $main-color;
+    }
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+
+    &__svg, &__svgR {
+        display: none;
+    }
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    padding-top: 43px;
+}
+
+.right-side {
+    text-align: center;
+}
+
+.reviews-article {
+    font-size: 12px;
+    line-height: 1.666;
+    letter-spacing: 0.08em;
+    color: $darkGrey-colorFont;
+    margin: 10px 20px 30px 20px;
+    padding-bottom: 30px;
+
+        &__p {
+            color: $grey-colorFont;
+            line-height: 1.166;
+            margin-top: 10px;
+            margin-bottom: 25px;
+        }
+}
+
+.reviews-team-list {
+    display: flex;
+    margin-top: 47px;
+
+    &__div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    &__item:nth-child(n+4) {
+        display: none;
+    }  
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279.9px) {
+   
+    .reviews {
+
+        &__container {
+            margin: 0 40px;
+        }
+
+        &__title {
+            font-size: 26px;
+            margin-bottom: 30px;
+        }
+        
+        &__name {
+            font-size: 20px;
+            line-height: 23px;
+            margin-top: 40px;
+        }
+
+        &-team-list {
+            margin-top: 30px;
+        }
+    
+        .right-side {
+            margin-left: 46px;
+            max-width: 412px;
+            width: 100%;
+        }
+        &_name {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        &-article__p {
+            margin-bottom: 20px;
+        }
+    }
+    .wrapper {
+        height: 313px;
+    }   
+}
+
+@media screen and (min-width: 768px) {
+    
+    .left-side {
+        padding-top: 40px;
+
+ 
+    }
+    .reviews-article {
+        margin: 0;
+    }
+
+    .reviews-team-list {
+
+        &__div {
+            justify-content: center;
+        }
+
+        &__svg, &__svgR {
+            display: none;
+        }
+
+        &__item:nth-child(n+4) {
+            display: block;
+        }    
+    }
+    .wrapper {
+        flex-direction: row;
+        justify-content: center;
+        
+        &__svg {
+            display: block;   
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -10px;
+        }      
+        &__svgR {
+            display: block;   
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: -10px;
+        }
+    }
+
+    .right-side {
+        text-align: left;
+        max-width: 447px;
+        margin-left: 40px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+    .wrapper {
+        width: 1090px;
+    }
+    .right-side {
+        max-width: 706px;
+        width: 100%;
+    }
+
+    .reviews {
+        &__title {
+        font-size: 46px;
+        font-weight: 800;
+        margin-bottom: 50px;
+        letter-spacing: 0.03em;
+        }
+
+        &__name {
+            margin-top: 50px;
+            font-weight: 800;
+            font-size: 30px;
+            line-height: 37px;
+            letter-spacing: 0.08em;
+        }
+
+        &-article {
+            font-size: 18px;
+            line-height: 28px;
+
+            &__p {
+                font-size: 14px;
+                line-height: 17px;
+                letter-spacing: 0.08em;
+            }
+        }       
+    }
+}
+

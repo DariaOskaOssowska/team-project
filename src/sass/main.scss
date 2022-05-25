@@ -1,13 +1,19 @@
 @import './utils/variables';
+@import './utils/visually-hidden';
+
 @import './base/common';
 @import './base/container';
 @import './base/section';
 
 @import './layout/header';
 @import './components/logo';
+@import './layout/advantages';
 @import './layout/how-we-do';
 @import './layout/_program';
-@import './layout/guarantee';
+@import './layout/benefits';
 @import './layout/about';
-// Style dla pliku z przykładem HTML fragmentu
-
+@import './layout/guarantee';
+@import './layout/reviews';
+@import './layout/contacts';
+@import './layout/footer';
+@import './components/read-more';
