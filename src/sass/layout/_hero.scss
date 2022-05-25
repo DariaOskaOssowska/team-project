@@ -1,9 +1,8 @@
 .hero {
-  // display: flex;
-  padding-top: 50px;
-  padding-bottom: 90px;
+  padding-top: 40px;
+  padding-bottom: 100px;
   background-image: url('../images/mobile/hero/hero-bgc-mobile.png');
-  background-position: 0;
+  background-position: 90% 87%;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -18,8 +17,9 @@
 
 @media screen and (min-width: 768px) {
   .hero {
+    padding-top: 80px;
+    padding-bottom: 84px;
     background-image: url('../images/tablet/hero/hero-bgc-tablet.png');
-    padding-top: 168px;
   }
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -33,6 +33,8 @@
 
 @media screen and (min-width: 1280px) {
   .hero {
+    padding-top: 40px;
+    padding-bottom: 46px;
     background-image: url('../images/desktop/hero/hero-bgc-desktop.png');
   }
   @media screen and (min-device-pixel-ratio: 2),
