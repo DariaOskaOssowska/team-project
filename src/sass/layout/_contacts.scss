@@ -17,6 +17,24 @@
   background-repeat: no-repeat;
 }
 
+.contacts-button-text {
+  transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-button {
+  transition: border 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    background 0.5s cubic-bezier(0.4, 0, 0.2, 1) border 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    background: transparent;
+    border: solid 1px $main-bgc;
+    .contacts-button-text {
+      color: $main-color;
+    }
+  }
+}
+
 // ==================================================================
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767.9px),
