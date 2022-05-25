@@ -7,10 +7,10 @@
 
   &__logo {
     text-align: center;
-    color: $dark-colorFont;
+    color: $grey-colorDecor;
     margin-top: 55px;
     &-text-color {
-      color: $main-color;
+      color: #ff6b09;
     }
     &-text1 {
       font-weight: 800;
@@ -20,7 +20,7 @@
       letter-spacing: 0.18em;
       text-transform: uppercase;
 
-      color: $dark-colorFont;
+      color: black;
 
       display: contents;
     }
@@ -32,7 +32,7 @@
       letter-spacing: 0.18em;
       text-transform: uppercase;
 
-      color: $dark-colorFont;
+      color: black;
     }
   }
   &__instagram {
@@ -74,7 +74,7 @@
 
     letter-spacing: 0.08em;
 
-    color: $dark-colorFont;
+    color: $grey-colorDecor;
     text-align: center;
     margin-top: 21px;
     display: block;
@@ -85,13 +85,13 @@
   width: 1680px;
 
   height: 70px;
-  background-color: $dark-colorFont;
+  background-color: $dark-bgc;
   margin: 0 auto;
   &-text {
     font-size: 14px;
     line-height: 28px;
 
-    color: $grey-colorDecor;
+    color: $grey-colorFont;
     padding-left: 52px;
     padding-top: 21px;
     padding-bottom: 21px;
@@ -125,13 +125,13 @@
   width: 100%;
   max-width: 767.9px;
   height: 70px;
-  background-color: $dark-colorFont;
+  background-color: $dark-bgc;
   margin: 0 auto;
   &-text {
     font-size: 14px;
     line-height: 28px;
 
-    color: $grey-colorDecor;
+    color: $grey-colorFont;
 
     padding-top: 21px;
     padding-bottom: 21px;
@@ -180,7 +180,7 @@
 
       letter-spacing: 0.08em;
 
-      color: $dark-colorFont;
+      color: $grey-colorDecor;
     }
 
     &__instagram {
@@ -194,13 +194,13 @@
     width: 100%;
     max-width: 1279.9px;
     height: 70px;
-    background-color: $dark-colorFont;
+    background-color: $dark-bgc;
     margin: 0 auto;
     &-text {
       font-size: 14px;
       line-height: 28px;
 
-      color: $grey-colorDecor;
+      color: $grey-colorFont;
       padding-left: 40px;
       padding-top: 21px;
       padding-bottom: 21px;
@@ -225,7 +225,7 @@
       margin-left: 183px;
     }
 
-    &_logo {
+    &__logo {
       margin: 0px 290px 40px 0px;
       padding-top: 30px;
       &-text1 {
@@ -252,7 +252,7 @@
 
       letter-spacing: 0.08em;
 
-      color: $dark-colorFont;
+      color: $grey-colorDecor;
     }
 
     &__instagram {
@@ -261,17 +261,18 @@
       padding-top: 30px;
     }
   }
+
   .box__all-rights {
     width: 100%;
     max-width: 1680px;
     height: 70px;
-    background-color: $dark-colorFont;
+    background-color: $dark-bgc;
     margin: 0 auto;
     &-text {
       font-size: 14px;
       line-height: 28px;
 
-      color: $grey-colorDecor;
+      color: $grey-colorFont;
       padding-left: 183px;
       padding-top: 21px;
       padding-bottom: 21px;
