@@ -1,136 +1,141 @@
 .benefits {
-  &__section {
-    display: block;
-    width: 100%;
-    max-width: 280px;
+  position: relative;
+  background-image: linear-gradient(to bottom, $dark-bgc 78%, $white-colorFont 22%);
+  display: flex;
+  justify-content: center;
 
-    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
-    margin: 0 auto;
-    margin-bottom: 130px;
-    color: $dark-colorFont;
-    z-index: 2;
+  &__container {
+    margin: 0 20px;
   }
 
-  &__box {
-    display: inline-flex;
-    flex-wrap: wrap;
+  &__header {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 1.291;
+    letter-spacing: 0.03em;
+    color: $white-colorFont;
+    margin-bottom: 30px;
+    text-align: left;
   }
 
-  &__boxs-position {
-    padding-top: 29px;
-    padding-left: 30px;
-  }
-
-  &__title {
+  &__span {
     color: $main-color;
-
-    padding-bottom: 10px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 23px;
   }
 
-  &__text {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 24px;
-
-    letter-spacing: 0.08em;
-
-    color: $dark-colorFont;
+  &__svg {
+    display: none;
+    fill: $darkGrey-colorFont;
+    position: absolute;
+    right: -71px;
+    bottom: 128px;
+    z-index: 1;
+    height: 70%;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 767.9px) {
-  .benefits {
-    &__section {
-      width: 100%;
-      max-width: 480px;
+
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  counter-reset: licznik;
+  background-color: $white-colorFont;
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+  padding-bottom: 20px;
+  z-index: 2;
+
+  &__item {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.428;
+    letter-spacing: 0.08em;
+    color: $dark-bgc;
+    margin-left: 30px;
+    margin-right: 34px;
+
+    &:last-child {
+      margin-bottom: 20px;
     }
-    &__box {
+
+    &::before {
       display: block;
+      counter-increment: licznik;
+      content: '— ' counter(licznik, decimal-leading-zero);
+      color: $main-color;
+      margin-top: 10px;
     }
-    &__title {
-      width: 100%;
-      max-width: 260px;
-    }
-    &__text {
-      width: 100%;
-      max-width: 260px;
-    }
+  }
+}
+
+.benefits__container {
+  @media screen and (min-width: 480px) and (max-width: 767.9px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279.9px) {
+    width: 768px;
+    margin: 0 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 1314px;
+    margin: 0;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279.9px) {
   .benefits {
-    &__section {
-      width: 100%;
-      max-width: 688px;
-    }
+    &__header {
+      font-size: 24px;
+      line-height: 130%;
+      letter-spacing: 0.03em;
+      margin-top: 10px;
+      margin-right: 158px;
 
-    &__box {
-      display: inline-flex;
-      flex-wrap: wrap;
+      &_svg {
+        display: block;
+      }
     }
+  }
 
-    &__title {
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 23px;
-      width: 236px;
-    }
+  .benefits-list {
+    flex-direction: row;
+    max-width: 688px;
+    margin: 0 auto;
+    z-index: 2;
 
-    &__text {
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 28px;
-      width: 236px;
+    &__item {
+      margin-top: 20px;
+      margin-left: 56px;
+      flex-basis: calc(100% / 2 - 96px);
     }
   }
 }
 
 @media screen and (min-width: 1280px) {
   .benefits {
-    &__section {
-      display: block;
-      width: 100%;
-      max-width: 1314px;
-      height: 398px;
-      box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
-      margin: 0 auto;
-      margin-bottom: 130px;
-      color: $dark-colorFont;
-      z-index: 2;
+
+
+    &__header {
+      font-weight: 800;
+      font-size: 46px;
+      line-height: 130%;
+      letter-spacing: 0.03em;
     }
+  }
 
-    &__box {
-      display: inline-flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-top: 40px;
-    }
+  .benefits-list {
+    flex-direction: row;
+    padding: 20px;
+    max-width: 1314px;
 
-    &__boxs-position {
-      margin-left: 40px;
-      width: 356px;
-    }
-
-    &__title {
-      color: $main-color;
-      width: 356px;
-      padding-bottom: 10px;
-      font-weight: 700;
-      font-size: 20px;
-      line-height: 32px;
-    }
-
-    &__text {
-      width: 356px;
-
+    &__item {
+      flex-basis: calc((100% - 30px * 3) / 3);
       font-weight: 700;
       font-size: 20px;
       line-height: 28px;
-
       letter-spacing: 0.08em;
+      margin-left: 15px;
+      margin-right: 15px;
     }
   }
 }
