@@ -1,8 +1,7 @@
 @charset "UTF-8";
-/*
- * Główny plik dla stylów.
- * Wszystkie partials podłączamy tutaj.
- */
+
+
+
 body {
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
@@ -24,6 +23,8 @@ ul {
   padding: 0;
   list-style: none;
   list-style-type: none;
+
+
 }
 
 p {
@@ -42,6 +43,7 @@ a {
   margin: auto;
 }
 
+
 a:visited {
   color: inherit;
 }
@@ -53,7 +55,8 @@ a:hover {
 .container {
   margin: 0 auto;
   padding: 0 20px;
-}
+
+
 
 @media screen and (min-width: 480px) {
   .container {
@@ -64,14 +67,16 @@ a:hover {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-    padding: 0 40px;
+
   }
 }
 
 @media screen and (min-width: 1280px) {
   .container {
+
     width: 1280px;
-    padding: 0 20px;
+   
+
   }
 }
 
@@ -88,6 +93,7 @@ a:hover {
     padding-bottom: 50px;
   }
 }
+
 
 .header {
   width: 100vw;
@@ -253,5 +259,6 @@ a:hover {
 
 .logo__accent {
   color: #ff6b09;
+
 }
 /*# sourceMappingURL=main.css.map */
