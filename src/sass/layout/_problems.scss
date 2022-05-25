@@ -1,8 +1,14 @@
 .problems {
+    position: relative;
     background-image: linear-gradient(to bottom, $dark-bgc 78%, 
     $white-colorFont 22%);
     display:flex;
     justify-content: center;
+    z-index: 0;
+
+    &__container {
+        margin:0 20px;
+    }
 
     &__header {
         font-weight: 800;
@@ -11,11 +17,22 @@
         letter-spacing: 0.03em;
         color: $white-colorFont;
         margin-bottom: 30px;
+        text-align: left;
     }
 
     &__span {
         color: $main-color;
     }      
+
+    &__svg {
+        display: none;
+        fill: $darkGrey-colorFont;
+        position: absolute;
+        right: -71px;
+        bottom: 128px;
+        z-index: 1;
+        height: 70%;
+    }
 }
 
 .problems-list {
@@ -26,6 +43,7 @@
     background-color: $white-colorFont;
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
     padding-bottom: 20px;
+    z-index: 2;
     
 
     &__item {
@@ -64,6 +82,7 @@
     
       @media screen and (min-width: 1280px) {
         max-width: 1314px;
+        margin:0 183px;
       }
 }
 
@@ -91,4 +110,10 @@
         }
     }
     
+}
+
+@media screen and (min-width: 1280px) {
+    .problems-list {
+        max-width: 1314 px;
+    }
 }
