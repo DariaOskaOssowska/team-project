@@ -1,12 +1,8 @@
 .problems {
-    height: 700px;
     background-image: linear-gradient(to bottom, $dark-bgc 78%, 
     $white-colorFont 22%);
-
-    &__container {
-        margin: 0 20px;
-
-    }
+    display:flex;
+    justify-content: center;
 
     &__header {
         font-weight: 800;
@@ -19,20 +15,18 @@
 
     &__span {
         color: $main-color;
-    }    
-
-    &__wrapper {
-        height: 465px;
-        width: 260px;
-        background-color: $white-colorFont;
-        box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
-    }
+    }      
 }
 
 .problems-list {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     counter-reset: licznik;
+    background-color: $white-colorFont;
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+    padding-bottom: 20px;
+    
 
     &__item {
         font-weight: 700;
@@ -40,10 +34,61 @@
         line-height: 1.428;
         letter-spacing: 0.08em;
         color: $dark-bgc;
+        margin-left: 30px;
+        margin-right: 34px;
+
+        &:last-child {
+            margin-bottom: 20px;
+        }
 
         &::before {
+            display:block;
             counter-increment: licznik;
-            content: counter(licznik, decimal-leading-zero); 
+            content: "-" counter(licznik, decimal-leading-zero); 
+            color: $main-color;
+            margin-top: 10px;
         }
     }
+}
+
+.problems__container {
+    @media screen and (min-width: 480px) and (max-width: 767.9px) {
+        width: 480px;
+      }
+    
+      @media screen and (min-width: 768px) and (max-width: 1279.9px) {
+        width: 768px;
+        margin:0 40px;
+      
+      }
+    
+      @media screen and (min-width: 1280px) {
+        max-width: 1314px;
+      }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279.9px) {
+    .problems {
+
+        &__header {
+            font-size: 24px;
+            line-height: 130%;
+            letter-spacing: 0.03em;
+            margin-top: 10px;
+            margin-right: 158px;
+        }
+    }
+
+    .problems-list {
+        flex-direction: row;
+        max-width: 688px;
+        margin:0 auto;
+
+        &__item {
+            margin-top: 20px;
+            margin-left: 56px;
+            flex-basis: calc(100%/2 - 96px);
+        }
+    }
+    
 }
