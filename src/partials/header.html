@@ -1,6 +1,13 @@
 <header id="heder" class="header container">
     <div class="header__container ">
-        <include src="./partials/logo.html"></include>
+        <div class="logo">
+            <a href="#" class="logo__link">
+                hell <svg class="logo__icon">
+                    <use href="./images/sprite.svg#icon-fire"></use></svg>
+                   <span class="logo__element">en</span>
+                    <p class="logo__undertitle"><span class="logo__accent">hellish</span> english</p>
+            </a>
+            </div>
         <nav class="navigation">
             <ul class="nav__list">
                 <li class="nav__item"><a href="#program" class="nav__link">studying program</a></li>
@@ -21,15 +28,24 @@
         </div>
     </div>
 
-    <div class="mobile-menu" data-menu>
+    <div class="mobile-menu  " data-menu>
         <button type="button" class="mobile-menu-close" data-menu-close>
             <svg class="mobile-menu-btn__icon mobile-menu-btn__icon-close" width="16" height="16">
                 <use class="mobile-menu-btn__icon" href="./images/svg/icons.svg#icon-close"></use>
             </svg>
         </button>
 
-        <div class="mobile-navigation">
+        <div class="mobile-navigation container">
+            <div class="logo  logo--modal">
+                <a href="#" class="logo__link">
+                    hell <svg class="logo__icon">
+                        <use href="./images/sprite.svg#icon-fire"></use></svg>
+                       <span class="logo__element">en</span>
+                        <p class="logo__undertitle"><span class="logo__accent">hellish</span> english</p>
+                </a>
+                </div>
             <ul class="mobile-navigation-list list">
+                <div class="modal-wrapper">
                 <li class="mobile-navigation-list__item"><a class="mobile-navigation-list__link link" href="#">studying
                         program</a></li>
                 <li class="mobile-navigation-list__item"><a class="mobile-navigation-list__link link" href="#">about</a>
@@ -40,7 +56,10 @@
                 <li class="mobile-navigation-list__item"><a class="mobile-navigation-list__link link"
                         href="#">contacts</a>
                 </li>
-            </ul>
+            </div>
+        </ul>
+        <a type="button" class="consultation__btn consultation__btn--modal" href="tel:48111111111">
+            consultation by phone</a>
         </div>
     </div>
 </header>
