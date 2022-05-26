@@ -20,6 +20,7 @@
     position: relative;
     background-color: $dark-bgc ;
     margin: 0px auto;
+    padding-bottom: 300px;
 
 
     &__list {
@@ -120,12 +121,13 @@
         max-width: 176px;
         height: 137px;
         position: absolute;
-        bottom: 0px;
+        bottom: 250px;
         right: 0px;
         object-fit: cover;
         overflow: hidden;
     }
 
+   
 
 
 
@@ -250,7 +252,8 @@
 
                 width: 240px;
             }
-            &:last-child{
+
+            &:last-child {
                 width: 155px;
             }
 
@@ -305,6 +308,7 @@
             height: 502px;
             max-width: 759px;
             left: 0px;
+            bottom: 0px;
         }
     }
 

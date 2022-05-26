@@ -3,19 +3,23 @@
   background-image: linear-gradient(to bottom, transparent 78%, $white-colorFont 22%);
   display: flex;
   justify-content: center;
+  padding-top: 0px;
 
   &__container {
     margin: 0 20px;
   }
 
   &__header {
+    width: 180px;
+    margin-top: -300px;
     font-weight: 800;
-    font-size: 24px;
-    line-height: 1.291;
+    font-size: 20px;
+    line-height: 1.36;
     letter-spacing: 0.03em;
     color: $white-colorFont;
     margin-bottom: 30px;
     text-align: left;
+    background-color: transparent;
   }
 
   &__span {
@@ -94,9 +98,10 @@
       font-size: 24px;
       line-height: 130%;
       letter-spacing: 0.03em;
-      margin-top: 10px;
+      margin-top: - 220px;
       text-align: center;
 
+      width:100% ;
       &_svg {
         display: block;
       }
@@ -119,7 +124,7 @@
 
 @media screen and (min-width: 1280px) {
   .benefits {
-   padding-bottom: 130px;
+    padding-bottom: 130px;
     margin-top: -199px;
     padding-top: 0;
     position: relative;
