@@ -16,8 +16,8 @@
                 <label>
                     <input class="contacts-tabel-name form-input" type="name" name="name" required minlength="3"
                         maxlength="25" title="Imię musi składać sie z minimum 3 znaków." placeholder=" Name*" />
-                    <input class="contacts-tabel-phone form-input" type="number" required min="100000000"
-                        max="999999999" class="form-input" title="Numer musi się składać z 9 cyfr."
+                    <input class="contacts-tabel-phone form-input" type="tel" pattern="[0-9]{9}"
+                    required class="form-input" title="Numer musi się składać z 9 cyfr."
                         placeholder=" Phone*" />
                     <button class="contacts-button" type="submit">
                         <p class="contacts-button-text">i want a free lesson</p>
