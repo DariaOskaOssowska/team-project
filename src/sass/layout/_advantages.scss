@@ -1,6 +1,6 @@
 .advantages {
   padding-top: 0;
-  padding-bottom: 0;
+  padding-bottom: 50px;
 }
 
 .advantages-container {
@@ -15,6 +15,14 @@
   align-items: center;
   letter-spacing: 0.08em;
   color: $dark-colorFont;
+    transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $main-color;
+    transform: scale(1.05);
+  }
 }
 
 @media screen and (max-width: 767.9px) {
@@ -86,6 +94,10 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .advantages {
+    padding-bottom: 130px;
+  }
+
   .advantages-list {
     display: flex;
     flex-wrap: wrap;

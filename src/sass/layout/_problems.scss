@@ -1,4 +1,4 @@
-.benefits {
+.problems {
   position: relative;
   background-image: linear-gradient(to bottom, $dark-bgc 78%, $white-colorFont 22%);
   display: flex;
@@ -33,7 +33,7 @@
   }
 }
 
-.benefits-list {
+.problems-list {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -59,14 +59,14 @@
     &::before {
       display: block;
       counter-increment: licznik;
-      content: '— ' counter(licznik, decimal-leading-zero);
+      content: '-' counter(licznik, decimal-leading-zero);
       color: $main-color;
       margin-top: 10px;
     }
   }
 }
 
-.benefits__container {
+.problems__container {
   @media screen and (min-width: 480px) and (max-width: 767.9px) {
     width: 480px;
   }
@@ -82,22 +82,14 @@
   }
 }
 
- @media screen and (min-width: 480px) and (max-width: 767.9px) {
-  .benefits__header {
-    width: 210px;
-
-  }
- }
-
 @media screen and (min-width: 768px) and (max-width: 1279.9px) {
-  .benefits {
+  .problems {
     &__header {
       font-size: 24px;
       line-height: 130%;
       letter-spacing: 0.03em;
       margin-top: 10px;
-      text-align: center;
-
+      margin-right: 158px;
 
       &_svg {
         display: block;
@@ -105,7 +97,7 @@
     }
   }
 
-  .benefits-list {
+  .problems-list {
     flex-direction: row;
     max-width: 688px;
     margin: 0 auto;
@@ -120,19 +112,24 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .benefits {
-
+  .problems {
+    padding: 100px 20px 0;
+    background-image: url('../images/svg/fire.svg'),
+      linear-gradient(to bottom, $dark-bgc 78%, $main-bgc 22%);
+    background-position: right;
+    background-repeat: no-repeat;
 
     &__header {
-      display: none;
+      font-weight: 800;
+      font-size: 46px;
+      line-height: 130%;
+      letter-spacing: 0.03em;
     }
   }
-
-  .benefits-list {
+  .problems-list {
     flex-direction: row;
     padding: 20px;
     max-width: 1314px;
-
     &__item {
       flex-basis: calc((100% - 30px * 3) / 3);
       font-weight: 700;

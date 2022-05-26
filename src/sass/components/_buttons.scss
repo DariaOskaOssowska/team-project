@@ -1,0 +1,24 @@
+.hero-btn {
+  display: block;
+  height: 48px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.154;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $white-colorFont;
+  background: $main-color;
+  border: none;
+  transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1) border 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    color: $main-color;
+    background-color: $white-colorFont;
+    border: 2px solid $main-color;
+  }
+}

@@ -1,5 +1,6 @@
 @charset "UTF-8";
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
@@ -9,6 +10,11 @@
  * Wszystkie partials podłączamy tutaj.
 >>>>>>> dev
  */
+=======
+
+
+
+>>>>>>> dev
 body {
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
@@ -30,8 +36,14 @@ ul {
   padding: 0;
   list-style: none;
 <<<<<<< HEAD
+<<<<<<< HEAD
   list-style-type: none;
 =======
+>>>>>>> dev
+=======
+  list-style-type: none;
+
+
 >>>>>>> dev
 }
 
@@ -52,6 +64,10 @@ a {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> dev
 a:visited {
   color: inherit;
 }
@@ -63,12 +79,17 @@ a:hover {
 .container {
   margin: 0 auto;
   padding: 0 20px;
+<<<<<<< HEAD
 =======
 .container {
   margin: 0 auto;
   padding: 0 15px;
 >>>>>>> dev
 }
+=======
+
+
+>>>>>>> dev
 
 @media screen and (min-width: 480px) {
   .container {
@@ -80,8 +101,12 @@ a:hover {
   .container {
     width: 768px;
 <<<<<<< HEAD
+<<<<<<< HEAD
     padding: 0 40px;
 =======
+>>>>>>> dev
+=======
+
 >>>>>>> dev
   }
 }
@@ -89,10 +114,17 @@ a:hover {
 @media screen and (min-width: 1280px) {
   .container {
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1280px;
     padding: 0 20px;
 =======
     width: 1200px;
+>>>>>>> dev
+=======
+
+    width: 1280px;
+   
+
 >>>>>>> dev
   }
 }
@@ -112,6 +144,10 @@ a:hover {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> dev
 .header {
   width: 100vw;
   color: #b9b9b9;
@@ -276,6 +312,7 @@ a:hover {
 
 .logo__accent {
   color: #ff6b09;
+<<<<<<< HEAD
 =======
 .example {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -301,6 +338,9 @@ a:hover {
   background-image: url("../images/demo.jpg");
   background-size: cover;
   background-position: center;
+>>>>>>> dev
+=======
+
 >>>>>>> dev
 }
 /*# sourceMappingURL=main.css.map */
