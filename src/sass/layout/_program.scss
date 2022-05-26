@@ -117,11 +117,11 @@
     }
 
     &__picture {
-       max-width: 176px;
+        max-width: 176px;
         height: 137px;
         position: absolute;
         bottom: 0px;
-        right:0px;
+        right: 0px;
         object-fit: cover;
         overflow: hidden;
     }
@@ -243,10 +243,16 @@
         }
 
         &__sublist {
-            width: 240px;
             font-size: 20px;
             margin-left: 0px;
 
+            &:not(:last-child) {
+
+                width: 240px;
+            }
+            &:last-child{
+                width: 155px;
+            }
 
             &::first-letter {
                 font-size: 30px;
@@ -293,12 +299,13 @@
         &__wrapper {
             margin-left: 30px;
         }
-        &__picture{
-            position:absolute;
+
+        &__picture {
+            position: absolute;
             height: 502px;
             max-width: 759px;
-            left:0px;
+            left: 0px;
         }
     }
 
-    }
+}
