@@ -11,13 +11,36 @@
         </nav>
         <div class="header__wraper">
             <a type="button" class="consultation__btn" href="tel:48111111111">
-                consultation by phone
-            </a>
-            <div class="burger__menu">
+                consultation by phone</a>
+
+            <div class="burger__menu" data-menu-open>
                 <svg class="burger__icon">
                     <use href="./images/sprite.svg#icon-menu"></use>
                 </svg>
             </div>
+        </div>
+    </div>
+
+    <div class="mobile-menu" data-menu>
+        <button type="button" class="mobile-menu-close" data-menu-close>
+            <svg class="mobile-menu-btn__icon mobile-menu-btn__icon-close" width="16" height="16">
+                <use class="mobile-menu-btn__icon" href="./images/svg/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+
+        <div class="mobile-navigation">
+            <ul class="mobile-navigation-list list">
+                <li class="mobile-navigation-list__item"><a class="mobile-navigation-list__link link" href="#">studying
+                        program</a></li>
+                <li class="mobile-navigation-list__item"><a class="mobile-navigation-list__link link" href="#">about</a>
+                </li>
+                <li class="mobile-navigation-list__item"><a class="mobile-navigation-list__link link" href="#">training
+                        option</a>
+                </li>
+                <li class="mobile-navigation-list__item"><a class="mobile-navigation-list__link link"
+                        href="#">contacts</a>
+                </li>
+            </ul>
         </div>
     </div>
 </header>
