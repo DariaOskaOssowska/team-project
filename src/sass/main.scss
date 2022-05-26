@@ -4,10 +4,11 @@
 @import './base/common';
 @import './base/container';
 @import './base/section';
-
+@import './components/read-more';
 
 @import './layout/header';
 @import './components/logo';
+@import './layout/hero';
 @import './layout/advantages';
 @import './layout/how-we-do';
 @import './layout/benefits';
@@ -17,4 +18,6 @@
 @import './layout/footer';
 @import './layout/reviews';
 @import './components/read-more';
+@import './layout/problems';
+
 
