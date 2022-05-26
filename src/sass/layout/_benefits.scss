@@ -82,6 +82,13 @@
   }
 }
 
+ @media screen and (min-width: 480px) and (max-width: 767.9px) {
+  .benefits__header {
+    width: 210px;
+
+  }
+ }
+
 @media screen and (min-width: 768px) and (max-width: 1279.9px) {
   .benefits {
     &__header {
@@ -89,7 +96,8 @@
       line-height: 130%;
       letter-spacing: 0.03em;
       margin-top: 10px;
-      margin-right: 158px;
+      text-align: center;
+
 
       &_svg {
         display: block;
@@ -116,10 +124,7 @@
 
 
     &__header {
-      font-weight: 800;
-      font-size: 46px;
-      line-height: 130%;
-      letter-spacing: 0.03em;
+      display: none;
     }
   }
 
